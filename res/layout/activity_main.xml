@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="50dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:gravity="center"
+                android:text="手机抓包工具"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_startCapture"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:text="开始抓包" />
+
+            <Button
+                android:id="@+id/btn_endCapture"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:text="停止抓包" />
+
+            <TextView
+                android:id="@+id/txtv_capState"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dip"
+                android:gravity="center"
+                android:textColor="#FF7722" />
+
+            <TextView
+                android:id="@+id/txtv_description"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:gravity="left"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/txtv_aboutAuthor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:gravity="left"
+                android:textColor="#000" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!--
+         <LinearLayout
+        android:id="@+id/adcontainer"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dip" >
+    </LinearLayout>
+    -->
+
+    <include layout="@layout/widget_common_ad" />
+
+</RelativeLayout>
